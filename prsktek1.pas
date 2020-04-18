@@ -12,8 +12,10 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
-    Button1: TButton;
-    procedure Button1Click(Sender: TObject);
+    Halo: TButton;
+    eNama: TEdit;
+    Label1: TLabel;
+    procedure HaloClick(Sender: TObject);
   private
 
   public
@@ -29,9 +31,9 @@ implementation
 
 { TForm1 }
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TForm1.HaloClick(Sender: TObject);
 begin
-     showmessage ('Hello Uniska');
+     showmessage ('Hello '+eNama.text);
 end;
 
 end.
